@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        #id1{
+            color: blueviolet;
+            background-color: aqua;
+        }
+        .cls1{
+            color: brown;
+            background-color: burlywood;
+        }
+        [type="text"]{
+            background-color: cadetblue;
+        }
+        *{
+            color: black;
+        }#id2{
+            color: brown;
+        }
+        #id2:hover{
+            color: blueviolet;
+        }
+        #id3:focus{
+            background-color: blueviolet;
+        }
+        table{
+            background-color: blueviolet;
+        }
+        table tr:nth-last-child(1){
+            background-color: aqua;
+        }
+        h2{
+            color: blue;
+        }
+        span::before{
+            content: '"';
+        }
+        span::after{
+            content: '"';
+        }
+        div~p{color: crimson;}
+    </style>
+</head>
+<body>
+    <h3>ID selector</h3>
+    <div id="id1">Manikanta</div>
+    <h3>Class selector</h3>
+    <div class="cls1">Manikanta</div>
+    <h3>Attribute selector</h3>
+    <input type="text" name="mani" id="mani">
+    <h3>Global</h3>
+    <div>applies to total web page</div>
+    <h3>Pseudo Classes</h3>
+    <div id="id2">Manikanta</div><br>
+    <input type="text" id="id3"><hr>
+    <table border="2" style="border-collapse: collapse;">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Manikanta</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Kowshik</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sai</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <h3>Type/Element selector</h3>
+    <h2>Manikanta</h2>
+    <h3>Pseudo Elements</h3>
+    <q>Manikanta</q>
+    <span>Manikanta</span>
+    <h3>Combinators</h3>
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+    </div>
+    <p>p4</p>
+    <p>p5</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+        --primary-color: blue;
+        --secondary-color: red;
+        }
+        .btnLogin {
+        background-color: var(--primary-color);
+        color: red;
+        }
+        .btnCancel {
+        background-color: var(--secondary-color);
+        color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button>submit</button>
+    <button>submit</button>
+    <button>submit</button>
+    <button>submit</button>
+    <button>submit</button>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    #first{
+        width: 100%;
+        height: 50px;
+        background-color: lightblue;
+    }
+    #second{
+        width: 100%;
+        height: 75px;
+        background-color: lightcoral;
+    }
+    #third{
+        width: 100%;
+        height: 100px;
+        background-color: lightgreen;
+    }
+    #fourth{
+        width: 100%;
+        height: 75px;
+        background-color: lightskyblue;
+    }
+    #fifth{
+        width: 100%;
+        height: 50px;
+        background-color: lightpink;
+    }
+
+    @media screen and (max-width:481px) {
+        #first{
+        height: 50px;
+        }
+        #second{
+            width: 49%;
+            height: 100px;
+            display: inline-block;
+        }
+        #third{
+            width: 49%;
+            height: 100px;
+            display: inline-block;
+        }
+        #fourth{
+            width: 100%;
+            height: 120px;
+        }
+        #fifth{
+            width: 100%;
+            height: 50px;
+        }
+    }
+
+    @media screen and (max-width:769px){
+        #first{
+        width: 100%;
+        height: 75px;
+        }
+        #second{
+            width: 20%;
+            height: 120px;
+            display: inline-block;
+        }
+        #third{
+            width: 58%;
+            height: 120px;
+            display: inline-block;
+        }
+        #fourth{
+            width: 20%;
+            height: 120px;
+            display: inline-block;
+        }
+        #fifth{
+            width: 100%;
+            height: 75px;
+        }
+    }
+</style>
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+    <div id="fourth"></div>
+    <div id="fifth"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body{
+            margin: 0px;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            color: #fff;
+            background-color: gray;
+            background-image: url(/Asstes/Images/woman\ \(1\).png);
+            background-size: cover;
+            border: 2px solid #000;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div strong{
+            position: absolute;
+            top: 0px;
+            right: 6px;
+        }
+        div span{
+            position: absolute;
+            bottom: 0px;
+            left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <strong>&copy;</strong>
+        <span>Manikanta</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms2</title>
+</head>
+<body>
+    <form>
+        <label for="text">Textarea<sup style="color: red;">*</sup></label>
+        <textarea name="textarea" id="text" cols="20" rows="5"></textarea>
+        
+        <hr>
+
+        <label for="drop">dropdown<sup style="color: red;">*</sup></label>
+        <select name="dropdown" id="drop">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+
+        <hr>
+
+        <label for="search">search<sup style="color: red;">*</sup></label>
+        <input type="search" list="search">
+        <datalist id="search">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </datalist>
+    </form>
+</body>
+</html>
