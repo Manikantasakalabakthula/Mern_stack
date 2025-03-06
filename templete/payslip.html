@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip</title>
+    <style>
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            border-color: black;
+        }
+        table tr td, th{
+            padding: 10px;
+        }
+        table tr th{
+            background-color: #f3f3f3;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2">Invoice #123</td>
+            <td colspan="2"> 8 August 2025</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <strong>Pay to:</strong> <br>
+                ABC Pvt Ltd.
+                123 MGRoad
+                Hyderabad-500072
+            </td>
+            <td colspan="2">
+                <strong>Customer:</strong> <br>
+                Manikanta
+                456 Park Street
+                Hyderabad-500072
+            </td>
+        </tr>
+        <tr>
+            <th>Item</th>
+            <th>Qty.</th>
+            <th>Unit Price</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Pens</td>
+            <td>100</td>
+            <td>5.00</td>
+            <td>500.00</td>
+        </tr>
+        <tr>
+            <td>Calculaters</td>
+            <td>8</td>
+            <td>100.00</td>
+            <td>800.00</td>
+        </tr>
+        <tr>
+            <th colspan="3" align="left">Subtotal</th>
+            <td>1,300.00</td>
+        </tr>
+        <tr>
+            <th colspan="2" align="left">Tax</th>
+            <td>5%</td>
+            <td>65.00</td>
+        </tr>
+        <tr>
+            <th colspan="3" align="right">Grand Total</th>
+            <td>&#x20B9;1,365.00</td>
+        </tr>
+    </table>
+</body>
+</html>

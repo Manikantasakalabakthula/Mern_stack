@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .navbar{
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .menu{
+            display: flex;
+            list-style-type: none;
+        }
+        .menu-item, .sub-menu-item{
+            padding: 10px 20px;
+            position: relative;
+            cursor: pointer;
+        }
+        .menu-item:hover, .sub-menu-item:hover{
+            background-color: #545454;
+        }
+        .menu .menu-item a{
+            color: white;
+            text-decoration: none;
+        }
+        .sub-menu{
+            display: none;
+            min-width: 200px;
+            background-color: #333;
+            list-style-type: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+        .menu-item:hover .sub-menu{
+            display: block;
+        }
+        .nested-menu{
+            display: none;
+            min-width: 200px;
+            background-color: #333;
+            color: white;
+            list-style-type: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+        .sub-menu-item:hover .nested-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ol class="menu">
+            <li class="menu-item"><i class="fas fa-home"></i><a href="/"> Home</a></li>
+            <li class="menu-item">
+                Categories <i class="fas fa-chevron-down"></i>
+                <ol class="sub-menu">
+                    <li class="sub-menu-item">
+                        Men <i class="fas fa-chevron-right"></i>
+                        <ol class="nested-menu">
+                            <li class="sub-menu-item">Clothing</li>
+                            <li class="sub-menu-item">Footwear</li>
+                            <li class="sub-menu-item">Accessories</li>
+                        </ol>
+                    </li>
+                    <li class="sub-menu-item">
+                        Women <i class="fas fa-chevron-right"></i>
+                        <ol class="nested-menu">
+                            <li class="sub-menu-item">Clothing</li>
+                            <li class="sub-menu-item">Footwear</li>
+                            <li class="sub-menu-item">Accessories</li>
+                        </ol>
+                    </li>
+                    <li class="sub-menu-item">
+                        Kids <i class="fas fa-chevron-right"></i>
+                        <ol class="nested-menu">
+                            <li class="sub-menu-item">Clothing</li>
+                            <li class="sub-menu-item">Footwear</li>
+                            <li class="sub-menu-item">Accessories</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

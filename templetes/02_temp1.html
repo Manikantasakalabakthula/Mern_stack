@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Templete</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(72, 71, 71);
+        }
+        #sec1{
+            padding: 50px;
+        }
+        #sec2{
+            padding: 0px 50px 50px 50px;
+        }
+        #left{
+            width: 65%;
+            height: 300px;
+            background-color: rgb(72, 71, 71);
+            display: inline-block;
+        }
+        #right{
+            width: 29%;
+            height: 300px;
+            background-color: grey;
+            display: inline-block;
+            margin-left: 20px;
+        }
+        #left1{
+            width: 65%;
+            height: 300px;
+            display: inline-block;
+            position: relative;
+        }
+        #right1{
+            width: 29%;
+            height: 300px;
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+        .cls{
+            width: 123px;
+            height: 120px;
+            background-color: rgb(160, 158, 158);
+        }
+        #id1{
+            position: absolute;
+            top: 0px;
+        }
+        #id2{
+            position: absolute;
+            top: 0px;
+            left: 140px;
+        }
+        #id3{
+            position: absolute;
+            top: 0px;
+            left: 280px;
+        }
+        #id4{
+            position: absolute;
+            top: 0px;
+            left: 420px;
+        }
+        #id5{
+            position: absolute;
+            top: 0px;
+            left: 560px;
+        }
+        .cls1{
+            width: 123px;
+            height: 5px;
+            background-color: rgb(206, 203, 203);
+        }
+        #id6{
+            position: absolute;
+            top: 130px;
+        }
+        #id7{
+            position: absolute;
+            top: 130px;
+            left: 140px;
+        }
+        #id8{
+            position: absolute;
+            top: 130px;
+            left: 280px;
+        }
+        #id9{
+            position: absolute;
+            top: 130px;
+            left: 420px;
+        }
+        #id10{
+            position: absolute;
+            top: 130px;
+            left: 560px;
+        }
+        .cls2{
+            width: 90px;
+            height: 5px;
+            background-color: rgb(206, 203, 203);
+            display: inline-block;
+        }
+        #id11{
+            position: absolute;
+            top: 140px;
+        }
+        #id12{
+            position: absolute;
+            top: 140px;
+            left: 140px;
+        }
+        #id13{
+            position: absolute;
+            top: 140px;
+            left: 280px;
+        }
+        #id14{
+            position: absolute;
+            top: 140px;
+            left: 420px;
+        }
+        #id15{
+            position: absolute;
+            top: 140px;
+            left: 560px;
+        }
+        .cls3{
+            width: 30px;
+            height: 5px;
+            background-color: rgb(206, 203, 203);
+        }
+        #id16{
+            position: absolute;
+            top: 140px;
+            left: 93px;
+        }
+        #id17{
+            position: absolute;
+            top: 140px;
+            left: 233px;
+        }
+        #id18{
+            position: absolute;
+            top: 140px;
+            left: 373px;
+        }
+        #id19{
+            position: absolute;
+            top: 140px;
+            left: 513px;
+        }
+        #id20{
+            position: absolute;
+            top: 140px;
+            left: 653px;
+        }
+        #id21{
+            position: absolute;
+            bottom: 20px;
+        }
+        #id22{
+            position: absolute;
+            bottom: 20px;
+            left: 140px;
+        }
+        #id23{
+            position: absolute;
+            bottom: 20px;
+            left: 280px;
+        }
+        #id24{
+            position: absolute;
+            bottom: 20px;
+            left: 420px;
+        }
+        #id25{
+            position: absolute;
+            bottom: 20px;
+            left: 560px;
+        }
+        #id26{
+            position: absolute;
+            bottom: 10px;
+        }
+        #id27{
+            position: absolute;
+            bottom: 10px;
+            left: 140px;
+        }
+        #id28{
+            position: absolute;
+            bottom: 10px;
+            left: 280px;
+        }
+        #id29{
+            position: absolute;
+            bottom: 10px;
+            left: 420px;
+        }
+        #id30{
+            position: absolute;
+            bottom: 10px;
+            left: 560px;
+        }
+        #id31{
+            position: absolute;
+            bottom: 0px;
+        }
+        #id32{
+            position: absolute;
+            bottom: 0px;
+            left: 140px;
+        }
+        #id33{
+            position: absolute;
+            bottom: 0px;
+            left: 280px;
+        }
+        #id34{
+            position: absolute;
+            bottom: 0px;
+            left: 420px;
+        }
+        #id35{
+            position: absolute;
+            bottom: 0px;
+            left: 560px;
+        }
+        #id36{
+            position: absolute;
+            bottom: 0px;
+            left: 93px;
+        }
+        #id37{
+            position: absolute;
+            bottom: 0px;
+            left: 233px;
+        }
+        #id38{
+            position: absolute;
+            bottom: 0px;
+            left: 373px;
+        }
+        #id39{
+            position: absolute;
+            bottom: 0px;
+            left: 513px;
+        }
+        #id40{
+            position: absolute;
+            bottom: 0px;
+            left: 653px;
+        }
+        #top{
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            background-color: grey;
+        }
+        .cls4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(160, 158, 158);
+            position: absolute;
+            top: 40px;
+        }
+        .cls5{
+            width: 63%;
+            height: 7px;
+            background-color: rgb(211, 209, 209);
+        }
+        #id41{
+            position: absolute;
+            top: 40px;
+            left: 113px;
+        }
+        #id42{
+            position: absolute;
+            top: 63px;
+            left: 113px;
+        }
+        #id43{
+            position: absolute;
+            top: 86px;
+            left: 113px;
+        }
+        #id44{
+            position: absolute;
+            top: 109px;
+            left: 113px;
+        }
+        #id45{
+            position: absolute;
+            top: 132px;
+            left: 113px;
+        }
+        .cls6{
+            width: 100%;
+            height: 7px;
+            background-color: rgb(211, 209, 209);
+            position: absolute;
+            top: 155px;
+        }
+        .cls7{
+            width: 100%;
+            height: 2px;
+            background-color: grey;
+            position: absolute;
+            top: 170px;
+        }
+        /* bottom */
+        .cls8{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(160, 158, 158);
+            position: absolute;
+            top: 180px;
+        }
+        .cls9{
+            width: 63%;
+            height: 7px;
+            background-color: rgb(211, 209, 209);
+        }
+        #id46{
+            position: absolute;
+            top: 180px;
+            left: 113px;
+        }
+        #id47{
+            position: absolute;
+            top: 203px;
+            left: 113px;
+        }
+        #id48{
+            position: absolute;
+            top: 226px;
+            left: 113px;
+        }
+        #id49{
+            position: absolute;
+            top: 249px;
+            left: 113px;
+        }
+        #id50{
+            position: absolute;
+            top: 272px;
+            left: 113px;
+        }
+        .cls10{
+            width: 100%;
+            height: 7px;
+            background-color: rgb(211, 209, 209);
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section id="sec1">
+        <div id="left"></div>
+        <div id="right"></div>
+    </section>
+
+    <section id="sec2">
+        <div id="left1">
+            <div class="cls" id="id1"></div>
+            <div class="cls" id="id2"></div>
+            <div class="cls" id="id3"></div>
+            <div class="cls" id="id4"></div>
+            <div class="cls" id="id5"></div>
+
+            <div class="cls1" id="id6"></div>
+            <div class="cls1" id="id7"></div>
+            <div class="cls1" id="id8"></div>
+            <div class="cls1" id="id9"></div>
+            <div class="cls1" id="id10"></div>
+
+            <div class="cls2" id="id11"></div>
+            <div class="cls2" id="id12"></div>
+            <div class="cls2" id="id13"></div>
+            <div class="cls2" id="id14"></div>
+            <div class="cls2" id="id15"></div>
+
+            <div class="cls3" id="id16"></div>
+            <div class="cls3" id="id17"></div>
+            <div class="cls3" id="id18"></div>
+            <div class="cls3" id="id19"></div>
+            <div class="cls3" id="id20"></div>
+
+            <div class="cls" id="id21"></div>
+            <div class="cls" id="id22"></div>
+            <div class="cls" id="id23"></div>
+            <div class="cls" id="id24"></div>
+            <div class="cls" id="id25"></div>
+
+            <div class="cls1" id="id26"></div>
+            <div class="cls1" id="id27"></div>
+            <div class="cls1" id="id28"></div>
+            <div class="cls1" id="id29"></div>
+            <div class="cls1" id="id30"></div>
+
+            <div class="cls2" id="id31"></div>
+            <div class="cls2" id="id32"></div>
+            <div class="cls2" id="id33"></div>
+            <div class="cls2" id="id34"></div>
+            <div class="cls2" id="id35"></div>
+
+            <div class="cls3" id="id36"></div>
+            <div class="cls3" id="id37"></div>
+            <div class="cls3" id="id38"></div>
+            <div class="cls3" id="id39"></div>
+            <div class="cls3" id="id40"></div>
+        </div>
+        <div id="right1">
+            <div id="top"></div>
+            <div class="cls4"></div>
+
+            <div class="cls5" id="id41"></div>
+            <div class="cls5" id="id42"></div>
+            <div class="cls5" id="id43"></div>
+            <div class="cls5" id="id44"></div>
+            <div class="cls5" id="id45"></div>
+
+            <div class="cls6"></div>
+
+            <div class="cls7"></div>
+
+            <div class="cls8"></div>
+
+            <div class="cls9" id="id46"></div>
+            <div class="cls9" id="id47"></div>
+            <div class="cls9" id="id48"></div>
+            <div class="cls9" id="id49"></div>
+            <div class="cls9" id="id50"></div>
+
+            <div class="cls10"></div>
+        </div>
+    </section>
+</body>
+</html>

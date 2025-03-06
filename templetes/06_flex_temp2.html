@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex templete 2</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .navbar{
+            height: 40px;
+            background-color: #5a5a5a;
+        }
+        .intro{
+            padding: 0px 50px 0px 50px;
+            display: flex;
+            gap: 20px;
+        }
+        .leftside{
+            width: 60%;
+            height: 200px;
+            background-color: #5a5a5a;
+        }
+        .rightside{
+            width: 40%;
+            height: 200px;
+            background-color: #bcbcbc;
+        }
+        .menu{
+            padding: 0px 50px 0px 50px;
+            display: flex;
+            gap: 20px;
+        }
+        .left{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .topbox{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .bottombox{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .top{
+            display: flex;
+            gap: 50px;
+        }
+        .box{
+            width: 130px;
+            height: 130px;
+            background-color: #bcbcbc;
+        }
+        .topbar{
+            display: flex;
+            gap: 50px;
+        }
+        .bar{
+            width: 130px;
+            height: 10px;
+            background-color: #bcbcbc;
+        }
+        .bottombar{
+            display: flex;
+            gap: 50px;
+        }
+        .bar1{
+            display: flex;
+            gap: 10px;
+        }
+        .large{
+            width: 90px;
+            height: 10px;
+            background-color: #bcbcbc;
+        }
+        .small{
+            width: 30px;
+            height: 10px;
+            background-color: #bcbcbc;
+        }
+        .right{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .righttopbar{
+            height: 20px;
+            background-color: #5a5a5a;
+        }
+        .boxbar{
+            display: flex;
+            gap: 15px;
+        }
+        .box1{
+            width: 18%;
+            height: 100px;
+            background-color: #bcbcbc;
+        }
+        .bar2{
+            width: 81%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .bars{
+            height: 10px;
+            background-color: #bcbcbc;
+        }
+        .right .bar{
+            width: 100%;
+            height: 10px;
+        }
+        .darkbar{
+            width: 100%;
+            height: 7px;
+            background-color: #5a5a5a;
+        }
+        #navbar{
+            height: 40px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="navbar"></div>
+        <div class="intro">
+            <div class="leftside"></div>
+            <div class="rightside"></div>
+        </div>
+        <div class="menu">
+            <div class="left">
+                <div class="topbox">
+                    <div class="top">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="bottombar">
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottombox">
+                    <div class="top">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="topbar">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="bottombar">
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                        <div class="bar1">
+                            <div class="large"></div>
+                            <div class="small"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="righttopbar"></div>
+                <div class="boxbar">
+                    <div class="box1"></div>
+                    <div class="bar2">
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                    </div>
+                </div>
+                <div class="bar"></div>
+                <div class="darkbar"></div>
+                <div class="boxbar">
+                    <div class="box1"></div>
+                    <div class="bar2">
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                        <div class="bars"></div>
+                    </div>
+                </div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <div id="navbar"></div>
+    </div>
+</body>
+</html>

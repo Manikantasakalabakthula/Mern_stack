@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "muli"
+        }
+        .root{
+            width: 900px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(/Asstes/Images/bg.png);
+        }
+        .product{
+            width: 750px;
+            height: 500px;
+            display: flex;
+            gap: 30px;
+            background-color: #2a2f40;
+        }
+        .left{
+            width: 50%;
+            height: 100%;
+            border-radius: 0px 50% 50% 0px;
+            background-color: #ff6e39;
+            position: relative;
+        }
+        .left img{
+            position: absolute;
+            top: 100px;
+            left: -90px;
+        }
+        .right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .logo{
+           font-size: 23px;
+           font-weight: 700;
+           color: #ff6e39;
+           margin-top: 30px;
+        }
+        .name{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .men{
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .price{
+            display: flex;
+            gap: 30px;
+        }
+        .price1{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .price2{
+            font-size: 19px;
+            font-weight: 600;
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+        .size{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .size span{
+            font-size: 12px;
+        }
+        .size1{
+            display: flex;
+            gap: 25px;
+        }
+        .color{
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .color div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .black{
+            background-color: black;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+        }
+        .button{
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: #2a2f40;
+            border: 0px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px -2px white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="product">
+            <div class="left">
+                <img src="/Asstes/Images/shoe.png" alt="">
+            </div>
+            <div class="right">
+                <span class="logo">Airmax</span>
+                <div class="content">
+                    <div class="name">Winter Collection</div>
+                    <div class="men">Men Black Sneakers</div>
+                    <div class="price">
+                        <span class="price1">150</span>
+                        <span class="price2">200</span>
+                    </div>
+                    <div class="size">
+                        <span>SIZE</span>
+                        <div class="size1">
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                            <span>11</span>
+                        </div>
+                    </div>
+                    <div class="color">
+                        <span>COLOR</span>
+                        <div class="yellow"></div>
+                        <div class="black"></div>
+                        <div class="blue"></div>
+                    </div>
+                    <div class="buttons">
+                        <button class="button">Buy Now</button>
+                        <button class="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Templete</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .bg{
+            background-color: #bcbcbc;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar{
+            padding: 8px 50px 8px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        #bg{
+            height: 220px;
+            background-color: #bcbcbc;
+        }
+        .intro{
+            padding: 8px 50px 8px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .rightside{
+            width: 65%;
+            height: 200px;
+            background-color: #949494;
+            position: relative;
+        }
+        .rightside span{
+            position: absolute;
+            top: 40%;
+            left: 5%;
+        }
+        #circle{
+            padding: 8px 500px 8px 50px;
+            display: flex;
+            gap: 5px;
+            justify-content: end;
+        }
+        .circle{
+            width: 10px;
+            height: 10px;
+            border: 0px solid black;
+            border-radius: 50%;
+            background-color: #bcbcbc;
+        }
+        .services{
+            padding: 8px 50px 8px 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 25%;
+            height: 200px;
+            background-color: #ccc;
+            position: relative;
+        }
+        .box span{
+            position: absolute;
+            top: 45%;
+            left: 40%;
+        }
+        .box p{
+            position: absolute;
+            top: 35%;
+            left: 40%;
+        }
+        .feed{
+            width: 66.1%;
+            height: 40px;
+            background-color: #ccc;
+            margin: 0px auto;
+            margin-bottom: 16px;
+            padding: 8px 50px 8px 50px;
+        }
+        .footer{
+            height: 40px;
+            padding: 8px 50px 8px 50px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer span{
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="navbar bg">
+            <img src="/Asstes/Images/cat.png" alt="cat">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Info</li>
+                <li>Products</li>
+            </ul>
+        </div>
+        <div class="intro" id="bg">
+            <div class="leftside">
+                <h2>Intro</h2>
+                <p>Some Introduction lines <br>about the website or <br>company</p>
+            </div>
+            <div class="rightside"><span>Featured project <br>slider</span></div>
+        </div>
+        <div id="circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="services">
+            <div class="box"><span>Services</span></div>
+            <div class="box"><span>Services</span></div>
+            <div class="box"><span>Services</span></div>
+            <div class="box"><p>Recent <br>work</p></div>
+            <div class="box"><p>Recent <br>work</p></div>
+            <div class="box"><p>Recent <br>work</p></div>
+        </div>
+        <div class="feed">
+            <span>Twitter Feed</span>
+        </div>
+        <div class="footer">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Info</li>
+            <li>Products</li>
+        </ul>
+        <span>&copy;copyright info</span>
+    </div>
+    </div>
+</body>
+</html>

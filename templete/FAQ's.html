@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ'S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .container{
+            width: 500px;
+            padding: 0 20px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .faq-item{
+            margin-top: 16px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 0px 10px rgba(0,0,0,0.5) ;
+        }
+        .input{
+            display: none;
+        }
+        .label{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            cursor: pointer;
+            position: relative;
+            font-size: 14px;
+        }
+        .faq-item .content{
+            font-size: 12px;
+            padding: 12px 14px;
+            display: none;
+        }
+        .input:checked + .label + .content{
+            display: block;
+        }
+        .icon{
+            font-size: 18px;
+        }
+        .faq-item .icon::after{
+            content: "+";
+        }
+        .input:checked + .label .question + .icon::after{
+            content: "-";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <input type="checkbox" id="faq" class="input">
+            <label for="faq" class="label">
+                <span class="question">Can I cancel my subscription at anytime?</span>
+                <span class="icon"></span>
+            </label>
+            <div class="content">Sure. Your paid subscription can be concelled anytime by shifting to Lite plan</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="input">
+            <label for="faq1" class="label">
+                <span class="question">Can I change my plan later on?</span>
+                <span class="icon"></span>
+            </label>
+            <div class="content">Absolutely! You can upgrade or downgrade your plan anytime. The money paid for the previous subscription will be recalculated to the new plan</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="input">
+            <label for="faq2" class="label">
+                <span class="question">Will you renew my subscription automatically?</span>
+                <span class="icon"></span>
+            </label>
+            <div class="content">Yes, your suttscription will be automatically renewed according to your pay period</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="input">
+            <label for="faq3" class="label">
+                <span class="question">How many sites can I install the widgets of this app to?</span>
+                <span class="icon"></span>
+            </label>
+            <div class="content">Widgets of our app cari be installed on as marty sites as you need.</div>
+        </div>
+    </div>
+</body>
+</html>

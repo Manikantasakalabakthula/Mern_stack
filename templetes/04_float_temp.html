@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .bg{
+            background-color: #bcbcbc;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            
+        }
+        .topbar{
+            padding: 8px 50px 8px 50px;
+        }
+        .menu{
+            list-style-type: none;
+            float: right;   
+        }
+        .menu li{
+            display: inline;
+            padding: 2px 5px 2px 5px;
+        }
+        .menu li:hover{
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+        .hero{
+            padding: 8px 50px 8px 50px; 
+            height: 220px;  
+        }
+        .leftside{
+            float: left;
+            width: 34%;
+        }
+        .rightside{
+            float: right;
+            width: 65%;
+            height: 200px;
+            background-color: #949494;
+            position: relative;
+        }
+        .hero .rightside span{
+            position: absolute;
+            top: 40%;
+            left: 5%;
+        }
+        .services{
+            padding: 8px 50px 8px 50px;
+            text-align: center; 
+        }
+        .box{
+            width: 25%;
+            height: 200px;
+            background-color: #ccc;
+            display: inline-block;
+            margin: 10px ;
+            position: relative;
+        }
+        .services .box span{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+        }
+        .recentwork{
+            padding: 8px 50px 8px 50px;
+            text-align: center; 
+        }
+        .recentwork{
+            padding-top: 0px;
+        }
+        .recentwork .box span{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+        }
+        .feed{
+            padding: 8px 50px 8px 50px;
+        }
+        .feed div{
+            padding: 16px;
+            width: 76%;
+            margin: 0px auto;
+        }
+        .footer{
+            padding: 8px 50px 8px 50px; 
+            height: 40px;
+        }
+        .footer .menu{
+            float: left;
+        }
+        .footer span{
+            float: right;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg topbar">
+        <img src="/Asstes/Images/cat.png" alt="">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Info</li>
+            <li>Products</li>
+        </ul>
+    </div>
+    <div class="bg hero">
+        <div class="leftside">
+            <h2>Intro</h2>
+            <p>Some Introduction lines <br>about the website or <br>company</p>
+        </div>
+        <div class="rightside"><span>Featured project <br>slider</span></div>
+    </div>
+    <div class="services">
+        <div class="box"><span>Services</span></div>
+        <div class="box"><span>Services</span></div>
+        <div class="box"><span>Services</span></div>
+    </div>
+    <div class="recentwork">
+        <div class="box"><span>Recent <br>Work</span></div>
+        <div class="box"><span>Recent <br>Work</span></div>
+        <div class="box"><span>Recent <br>Work</span></div>
+    </div>
+    <div class="feed">
+        <div class="bg">Twitter Feed</div>
+    </div>
+    <div class="footer bg">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Info</li>
+            <li>Products</li>
+        </ul>
+        <span>&copy;copyright info</span>
+    </div>
+</body>
+</html>

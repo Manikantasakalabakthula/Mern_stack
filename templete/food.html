@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato</title>
+    <style>
+        body{
+            margin: 20px 200px 20px 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
+        }
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            height: 30px;
+        }
+        [type="search"]{
+            width: 500px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        [type="search"]::placeholder{
+            padding: 5px;
+            
+        }
+        [type="button"]{
+            width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            
+        }
+        .restaurents{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .restaurentcards{
+            width: 30%;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            box-shadow: 10px 10px 40px rgba(128, 128, 128, 0.4);
+        }
+        .restaurentcards img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+        .restaurentdetails{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 5px 0 5px;
+        }
+        .restaurentname{
+            font-weight: 600;
+        }
+        .rating{
+            background-color: green;
+            color: white;
+            font-weight: 700;
+            width: 40px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+        .details{
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 5px 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- this is header section -->
+    <header>
+        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="zomato" class="logo">
+
+        <div class="search">
+            <input type="search" placeholder="Search for the Restaurents or a Dish">
+            <input type="button" value="Search">
+        </div>
+    </header>
+
+    <!-- this is main body section  -->
+     <main class="restaurents">
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/dish_photos/4e5/d4bbc45d049e96ba75895fcf3a6144e5.jpg?output-format=webp" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Makkah Tiffin Centre</p>
+                <p class="rating">4.0 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Idly, Puri, Vada</p>
+                <p class="price">&#x20B9;100 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/8/18650448/fbb633346915e7d0ca2ebec29f000617_o2_featured_v2.jpg?output-format=webp" alt="pizza">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Masqati</p>
+                <p class="rating">4.1 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Burger, Cool drinks</p>
+                <p class="price">&#x20B9;150 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/3/21329873/525d6b87be98a785f6e0fe9d2b6774d7_o2_featured_v2.jpg?output-format=webp" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Cream Stone Ice Cream</p>
+                <p class="rating">4.4 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Brownies, Ice creams</p>
+                <p class="price">&#x20B9;100 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/0/19470170/5a1034a8a2e6ac2ee2d9509b21470a23_o2_featured_v2.jpg?output-format=webp" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Iqbal Cafe</p>
+                <p class="rating">4.5 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Hyderabadi, Biryani</p>
+                <p class="price">&#x20B9;150 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/5/19751765/b8f98cd0239c1792920ffd087a83f9fa_o2_featured_v2.jpg?output-format=webp" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Pista House - Premium Lounge</p>
+                <p class="rating">4.2 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Biryani, Salad, Italian</p>
+                <p class="price">&#x20B9;500 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/2/92652/37dd4d6a8f4868843f3c1019859f303c_o2_featured_v2.jpg?output-format=webp" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Govind Dosa</p>
+                <p class="rating">3.8 &#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">Idly, Puri, Vada</p>
+                <p class="price">&#x20B9;100 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/7/90057/8345d6038caa8f884ca11a2a9fa4229b_o2_featured_v2.jpg" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Santosh Dhaba</p>
+                <p class="rating">4.2&#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">North Indian, Chinese, Italian</p>
+                <p class="price">&#x20B9;400 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/7/20402467/442c7e90a47230f5ce75959f2e74f65b_o2_featured_v2.jpg" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Naintara</p>
+                <p class="rating">4.2&#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">North Indian, Fast Food, Momos</p>
+                <p class="price">&#x20B9;200 for one</p>
+            </div>
+        </div>
+
+        <div class="restaurentcards">
+            <img src="https://b.zmtcdn.com/data/pictures/7/19890737/b0ff48e7760971bfd0bbeb92def0f3f0_o2_featured_v2.jpg" alt="Dosa">
+            <div class="restaurentdetails">
+                <p class="restaurentname">Swagth Hotel</p>
+                <p class="rating">4.2&#x2605;</p>
+            </div>
+            <div class="details">
+                <p class="items">North Indian, South Indian, Chinese</p>
+                <p class="price">&#x20B9;200 for one</p>
+            </div>
+        </div>
+     </main>
+</html>

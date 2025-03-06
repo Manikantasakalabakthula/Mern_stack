@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(375deg, #1cc7d0, #2ede98);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile{
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon{
+            width: 130px;
+            height: 130px;
+            border: 5px solid #2ede98;
+            border-radius: 50%;
+            background-image: url(/Asstes/Images/profile.jpg);
+            background-size: cover;
+        }
+        .name{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .about{
+            color: rgb(63, 63, 63);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            margin-right: 40px;
+        }
+        .list li{
+           padding: 20px;
+           border-radius: 50%;
+           background: linear-gradient(375deg, #1cc7d0, #2ede98);
+           position: relative;
+        }
+        .list li a{
+            font-size: 23px;
+            color: white;
+            position: absolute;
+            top: 4px;
+            left: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <div class="icon"></div>
+        <div class="name">Manikanta</div>
+        <div class="about">Front-End Developer</div>
+        <div class="media">
+            <ul class="list">
+                <li><a href="https://www.facebook.com/manikanta2412/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://x.com/Manikanta242503?t=WxN4GZJLdNc6iT2joEX0sA&s=08" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mani.24_12?igsh=N2s2dnRsMmkxYnp3" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/@mani.24_12?si=h9ND70tvct-WbMFo" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+        </div>
+    </div>
+</body>
+</html>
